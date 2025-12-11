@@ -23,7 +23,7 @@ def print_board(board):
         print("+------"*4 + "+")
         print("".join(f"|{str(num).center(6) if num!=0 else '      '}" for num in row) + "|")
     print("+------"*4 + "+")
-    print("\nW A S D untuk gerak. Q untuk keluar ges.\n")
+    print("\nW A S D untuk gerak. Q untuk keluar guys!.\n")
 
 def compress(row):
     new_row = [i for i in row if i != 0]
@@ -89,7 +89,7 @@ def main():
         move = input("Gerak (W/A/S/D): ").lower()
         
         if move == "q":
-            print("Yahh! Kamu kalah AWKWOAKW.")
+            print("Yahh! Kamu kalah,coba lagi!.")
             break
         
         if move not in ("w", "a", "s", "d"):
@@ -111,8 +111,9 @@ def main():
         
         if game_over(board):
             print_board(board)
-            print("TETOTT! UDAH GABISA GERAKK.")
+            print("TETOTT! UDAH GABISA GERAK!.")
             break
 
 if __name__ == "__main__":
     main()
+
